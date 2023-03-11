@@ -5,7 +5,7 @@
  *
  * @tree: a pointer to the root node of the tree to measure the size
  *
- * Return: the size of a node
+ * Return: the size of a tree from a given node.
  *
  * If tree is NULL return 0
  */
