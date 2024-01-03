@@ -1,6 +1,8 @@
 # Emacs, Vim
 *~
-# C main functions, C executables
+# C main functions
+*-main.c
+# C executables
 *-*
 # Unignore C functions file
 !*-*.c
