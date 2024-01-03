@@ -1,2 +1,6 @@
 Emacs, Vim
 *~
+C main functions
+*-main.c
+C executable
+[0-9]+-[a-z_]+
