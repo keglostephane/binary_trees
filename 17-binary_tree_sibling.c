@@ -11,10 +11,12 @@
  */
 size_t is_left_or_right(binary_tree_t *node, binary_tree_t *parent)
 {
-	binary_tree_t *lnode, *rnode;
+	binary_tree_t *lnode = NULL, *rnode = NULL;
 
-	lnode = parent->left;
-	rnode = parent->right;
+	if (parent->left)
+		lnode = parent->left;
+	if (parent->right)
+		rnode = parent->right;
 
 	if (node == lnode)
 		return (1);
@@ -46,8 +48,6 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 		sibling = (node->parent)->right;
 	else if (l_or_r == 2)
 		sibling = ((node->parent)->left);
-	else
-		sibling = NULL;
 	return sibling;
 
 }
