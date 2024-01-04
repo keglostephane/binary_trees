@@ -43,10 +43,11 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 		return (NULL);
 	l_or_r = is_left_or_right(node, node->parent);
 	if (l_or_r == 1)
-		return ((node->parent)->right);
+		sibling = (node->parent)->right;
 	else if (l_or_r == 2)
-		return ((node->parent)->left);
+		sibling = ((node->parent)->left);
 	else
-		return (NULL);
+		sibling = NULL;
+	return sibling;
 
 }
