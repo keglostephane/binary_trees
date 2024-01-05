@@ -73,11 +73,8 @@ int is_perfect(const binary_tree_t *tree, unsigned int height)
 			return (0);
 	}
 
-	if (tree->left && tree->right)
-	{
-		lt = 1 && is_perfect(tree->left, height);
-		rt = 1 && is_perfect(tree->right, height);
-	}
+	lt = 1 && is_perfect(tree->left, height);
+	rt = 1 && is_perfect(tree->right, height);
 
 	return (lt && rt);
 
